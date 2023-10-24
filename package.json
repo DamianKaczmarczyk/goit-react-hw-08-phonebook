@@ -5,6 +5,8 @@
   "homepage": "https://DamianKaczmarczyk.github.io/goit-react-hw-02-phonebook/",
   "dependencies": {
     "eslint-config-react-app": "^7.0.1",
+    "nanoid": "^5.0.2",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
