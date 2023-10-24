@@ -1,7 +1,8 @@
 # Opis projektu:
 
 Projekt tworzy książkę telefoniczną, do której można dodawać i usuwać kontakty,
-wyszukiwać kontakt. Utworzony za pomocą React. Link do Projektu:
+wyszukiwać kontakt. Utworzony za pomocą React. Podgląd live:
+https://damiankaczmarczyk.github.io/goit-react-hw-02-phonebook/
 
 # React homework template
 
