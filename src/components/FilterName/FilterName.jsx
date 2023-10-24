@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './FilterName.module.css'
 export default function FilterName({ hendlerChangeFilter }) {
   return (
-    <div>
-      <p>Find contacts by name</p>
+    <div className={css.div}>
+      <label>Find contacts by name
 
-      <input onChange={hendlerChangeFilter} type="text" name="filter" />
+      <input className={css.input}onChange={hendlerChangeFilter} type="text" name="filter" />
+      </label>
     </div>
   );
 }

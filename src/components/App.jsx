@@ -60,10 +60,17 @@ class App extends Component {
           color: '#010101',
         }}
       >
-        <h1>Phonebook</h1>
-        <div>
+        <h1 style={{
+          display:'flex',
+          justifyContent: 'center',
+        }}>Phonebook</h1>
+        <div 
+        >
           <ContactForm addNewContact={this.addNewContact} />
-          <h2>Contacts</h2>
+          <h2 style={{
+            display:'flex',
+            justifyContent:'center',
+          }}>Contacts</h2>
           <FilterName hendlerChangeFilter={this.hendlerChangeFilter} />
           <ContactList
             getFilterName={this.getFilterName}
