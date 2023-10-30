@@ -1,4 +1,4 @@
-# Opis projektu:
+# Project Description:
 
 On this website you can add and remove contacts.
 
