@@ -2,8 +2,9 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DamianKaczmarczyk.github.io/goit-react-hw-02-phonebook/",
+  "homepage": "https://DamianKaczmarczyk.github.io/goit-react-hw-03-phonebook/",
   "dependencies": {
+    "depcheck": "^1.4.7",
     "eslint-config-react-app": "^7.0.1",
     "nanoid": "^5.0.2",
     "prop-types": "^15.8.1",
