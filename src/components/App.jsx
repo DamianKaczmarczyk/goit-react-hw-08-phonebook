@@ -28,6 +28,7 @@ class App extends Component {
       : this.setState({
           contacts: [...contacts, { name, number, id: nanoid() }],
         });
+        localStorage.setItem('contacts', JSON.stringify(contacts));
   };
 
   hendlerChangeFilter = event => {
@@ -49,6 +50,17 @@ class App extends Component {
     }));
   };
 
+  componentDidMount() {
+    const savedSettings = localStorage.getItem('contacts');
+    const parsedSettings = JSON.parse(savedSettings);
+    console.log(parsedSettings);
+    if (parsedSettings !==null) this.setState({ contacts: parsedSettings});
+  }
+
+componentDidUpdate() {
+  const { contacts } = this.state;
+  localStorage.setItem('contacts', JSON.stringify(contacts));
+}
   render() {
     return (
       <div
