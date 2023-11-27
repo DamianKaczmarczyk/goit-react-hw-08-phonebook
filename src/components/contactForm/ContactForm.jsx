@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addContact } from 'redux/reducer/contactsSlice';
 import css from './ContactForm.module.css'
 
-export default function ContactForm({ addNewContact }) {
+export default function ContactForm() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+
+  const dispatch = useDispatch();
 
   const handlerChange = e => {
     const { name, value } = e.target;
@@ -12,7 +16,7 @@ export default function ContactForm({ addNewContact }) {
 
   const handlerSubmit = event => {
     event.preventDefault();
-    addNewContact(name, number);
+    dispatch(addContact(name, number));
     reset();
   };
 
