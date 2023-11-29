@@ -2,9 +2,11 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DamianKaczmarczyk.github.io/goit-react-hw-06-phonebook/",
+  "homepage": "https://DamianKaczmarczyk.github.io/goit-react-hw-07-phonebook/",
   "dependencies": {
+    "@redux-devtools/extension": "^3.2.6",
     "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.6.2",
     "depcheck": "^1.4.7",
     "eslint-config-react-app": "^7.0.1",
     "nanoid": "^5.0.2",
