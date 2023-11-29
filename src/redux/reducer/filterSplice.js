@@ -11,5 +11,6 @@ const filterSplice = createSlice({
     },
   },
 });
+
 export const { getFilterName } = filterSplice.actions;
 export default filterSplice.reducer;
