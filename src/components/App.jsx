@@ -24,7 +24,7 @@ const App = () => {
     () => {
       dispatch(fetchContacts());
     }, 
-    []
+   [dispatch], 
   );
   if (error) return <p>{error}</p>;
   if (isLoading) return <p>Loading...</p>;
