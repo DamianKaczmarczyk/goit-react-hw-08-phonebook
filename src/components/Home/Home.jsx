@@ -11,7 +11,7 @@ export default function Home() {
       flexDirection={'column'}
       gap={10}
       border="1px"
-      borderColor="gray.200"
+      borderColor="gray.300"
       mt={10}
       py={30}
       boxShadow="dark-lg"
