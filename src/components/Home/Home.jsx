@@ -17,7 +17,7 @@ export default function Home() {
       boxShadow="dark-lg"
       p="5"
       rounded="md"
-      bg="teal"
+      bg="white"
     >
       <Heading>Phonebook</Heading>
       <Heading>Welcome {user}!</Heading>
