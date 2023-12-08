@@ -3,8 +3,7 @@ import {
   fetchContacts,
   deleteContact,
   addContact,
-} from 'components/operations/operations';
-
+} from 'redux/reducers/contacts/operations';
 
 const contactsSlice = createSlice({
   name: 'contacts',
@@ -56,7 +55,6 @@ const contactsSlice = createSlice({
       });
   },
 });
-
 
 export const { startContact } = contactsSlice.actions;
 export default contactsSlice.reducer;

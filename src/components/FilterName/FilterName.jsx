@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { getFilterName } from 'redux/reducer/filterSplice';
-import css from './FilterName.module.css'
+import { getFilterName } from 'redux/reducers/contacts/filterSplice';
+import { Box, Input, Text } from '@chakra-ui/react';
+
 export default function FilterName() {
   const dispatch = useDispatch();
 
@@ -8,11 +9,16 @@ export default function FilterName() {
     return dispatch(getFilterName(event.target.value));
   };
   return (
-    <div className={css.div}>
-      <label>Find contacts by name
+    <Box  >
+      <Text fontSize={25} pb={4}>Find contacts by name</Text>
 
-      <input className={css.input}onChange={handlerChangeFilter} type="text" name="filter" />
-      </label>
-    </div>
+      <Input
+        width="auto"
+        onChange={handlerChangeFilter}
+        type="text"
+        name="filter"
+        placeholder="Find name"
+      />
+    </Box>
   );
 }

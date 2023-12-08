@@ -1,15 +1,19 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'components/operations/operations';
-import css from './ContactsItem.module.css'
+import { deleteContact } from 'redux/reducers/contacts/operations';
+import { ListItem, Button } from '@chakra-ui/react';
+import { DeleteIcon } from '@chakra-ui/icons';
+
 export default function ContactsItem({ contacts }) {
   const dispatch = useDispatch();
 
   return (
-    <li className={css.list}>
-      {contacts.name}: {contacts.phone}
-      <button className={css.button} onClick={() =>dispatch(deleteContact(contacts.id))}>Delete</button>
-    </li>
+    <ListItem p={2} fontSize={25}>
+      {contacts.name}: {contacts.number}
+      <Button onClick={() => dispatch(deleteContact(contacts.id))}>
+        <DeleteIcon boxSize={5} />
+      </Button>
+    </ListItem>
   );
 }
 ContactsItem.propTypes = {
