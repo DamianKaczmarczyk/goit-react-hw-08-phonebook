@@ -1,6 +1,6 @@
 # Project Description:
 
-On this website you can add and remove contacts.
+On this website you can register/login to add and remove contacts.
 
 # My site is live at:
 
