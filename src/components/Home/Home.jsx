@@ -15,7 +15,7 @@ export default function Home() {
       mt={10}
       py={30}
       boxShadow="dark-lg"
-      p="4"
+      p="5"
       rounded="md"
       bg="teal"
     >
