@@ -21,10 +21,10 @@ export default function Loging() {
       gap={10}
       border="1px"
       borderColor="gray.300"
-      mt={10}
+      mt={100}
       py={25}
       boxShadow="dark-lg"
-      p="4"
+      p="20"
       rounded="md"
       bg="white"
     >

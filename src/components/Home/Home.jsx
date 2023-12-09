@@ -12,7 +12,7 @@ export default function Home() {
       gap={10}
       border="1px"
       borderColor="gray.300"
-      mt={10}
+      mt={100}
       py={30}
       boxShadow="dark-lg"
       p="5"
